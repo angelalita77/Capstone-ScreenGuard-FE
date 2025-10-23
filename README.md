@@ -8,7 +8,7 @@ Capstone Objective
 Create a full-stack web application using MongoDB, Express, React, and Node (MERN).
 
 ## Link to my Back-End Repo
-### [ScreenGuard Front-End](https://github.com/angelalita77/Capstone-ScreenGuard-BE)<br/><br/>
+### [ScreenGuard Back-End](https://github.com/angelalita77/Capstone-ScreenGuard-BE)<br/><br/>
 
 
 # Dependancies Used:
