@@ -51,7 +51,7 @@ const [videoData, setVideoData] = useState(null);
                             {/* Assuming your video object has 'title' and 'url' properties */}
                             <h2>{video.title}</h2> 
                             <p>URL: <a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p>
-                            <img src={video.thumbnail} alt="video" />
+                            <img src={video.thumbnail[0]} alt="video" />
                             {/* Add more video properties here as needed */}
                         </div>
                     ))}

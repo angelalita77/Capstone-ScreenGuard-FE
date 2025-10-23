@@ -33,12 +33,37 @@ const [videoData, setVideoData] = useState(null);
   // Dependency array is empty, so it only runs once after the initial render.
   }, []); 
 
-  async function handleUpdate(id) {
-                    let res = await axios.put(apiStr + id,
+
+  //Upate Handle
+  async function handleUpdate(_id) {
+                    let res = await axios.put(apiStr + _id,
                         {title: ""}); 
                 }
 
+// Delete Handle
+async function handleDelete(_id)
+{
+    try {
+        let answer = confirm(
+            `Are you sure you want to delete this video?`
+        );
+
+        if (!answer) return;
+
+        await axios.delete(`${apiStr}${_id}`);
+
+        let newVideoQueue = videoData.filter((video) => video._id !== _id);
+
+        setVideoData(newVideoQueue);
+    } catch (err) {
+        console.error(err.message);
+        
+    }
+}
+
+
     return (
+    
     <section className="approved-videos">
             <h1>Approved Videos List</h1>
 
@@ -55,9 +80,9 @@ const [videoData, setVideoData] = useState(null);
                             {/* Assuming your video object has 'title' and 'url' properties */}
                             <h2>{video.title}</h2> 
                             <p>URL: <a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p>
-                            <img src={video.thumbnail} alt="video" />
-                            <button onClick={(e)=>handleUpdate(video.id, e.target.value)}>Update</button>
-                            <button>Delete</button>
+                            <img src={video.thumbnail[0]} alt="video" />
+                            <button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button>
+                            <button onClick={()=>handleDelete(video._id)}>Delete</button>
                             {/* Add more video properties here as needed */}
                         </div>
                     ))}
