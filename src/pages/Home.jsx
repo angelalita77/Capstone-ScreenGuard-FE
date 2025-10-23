@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import DisplayVideo from '../components/DisplayVideo';
 
 export default function Home() {
 
@@ -29,7 +30,7 @@ export default function Home() {
             ...(nextPageToken && { pageToken: nextPageToken }),
         });
 
-        console.log(url);
+        // console.log(url);
 
         try {
             // fetch data from the Google API
@@ -40,7 +41,10 @@ export default function Home() {
             // search thru data fetches for kind id type videos
             const videos = data.items.filter((item) => item.id.kind === "youtube#video");
             console.log(videos); // <-- check to see if videoId was found in snippet
-            setVideoData(videos); 
+
+            setVideoData(videos);
+
+
             // If the videoId is not found
             // call the fetchVideos() function again until found or
             // until it reach the max attempts
@@ -65,6 +69,7 @@ export default function Home() {
     }
 
 
+
     return (
         <div>
             {/* <!-- Search Bar with Button --> */}
@@ -78,11 +83,11 @@ export default function Home() {
             </div>
 
             {/* <!-- Videos Recieved Container --> */}
-            <div id="player-container">
-                <div>
-                    {/* <!-- Videos within iframe tags here --> */}
-                    
-                </div>
+            <div id="video-container">
+                {/* Conditional rendering - only map if videoData exists */}
+                {videoData && videoData.map((video, index) => (
+                    <DisplayVideo key={index}{...video}/>
+                ))}
             </div>
 
         </div>
