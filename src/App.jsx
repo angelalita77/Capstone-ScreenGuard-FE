@@ -4,10 +4,10 @@ import './App.css'
 import Navbar from './components/navBar/Navbar'
 
 //Import pages
-import Home from './pages/Home'
-import About from './pages/About'
-import Dashboard from './pages/Dashboard'
-import Approved from './pages/Approved'
+import Home from './pages/HomePage/Home'
+import About from './pages/AboutPage/About'
+import Dashboard from './pages/DashboardPage/Dashboard'
+import Approved from './pages/ApprovedPage/Approved'
 
 
 

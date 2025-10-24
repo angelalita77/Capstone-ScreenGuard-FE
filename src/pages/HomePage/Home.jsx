@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import DisplayVideo from '../components/DisplayVideo';
+import './Home.css'
+import DisplayVideo from '../../components/DisplayVideo';
 
 export default function Home() {
 
@@ -73,7 +74,7 @@ export default function Home() {
     return (
         <div>
             {/* <!-- Search Bar with Button --> */}
-            <form id="search-section" onSubmit={fetchVideos}>
+            <form id="search-container" onSubmit={fetchVideos}>
                 <input onChange={handleChange} type="text" id="search-input" placeholder="Search for videos ..." />
                 <input type="submit" id="search-btn" value="Search" />
             </form>
