@@ -27,7 +27,7 @@ function App() {
           {/* <Route element={<ProtectedRoutes />}> */}
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/approved" element={<Approved />} />
-          <Route path="/updateform" element={<UpdateForm />} />
+          <Route path="/updateform/:_id" element={<UpdateForm />} /> //Pass the _id params as a Route parameter
           
 
         </Routes>

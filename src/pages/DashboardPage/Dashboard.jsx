@@ -35,11 +35,11 @@ const [videoData, setVideoData] = useState(null);
   }, []); 
 
 
-  //Upate Handle
-  async function handleUpdate(_id) {
-                    let res = await axios.put(apiStr + _id,
-                        {title: ""}); 
-                }
+//   //Upate Handle
+//   async function handleUpdate(_id) {
+//                     let res = await axios.put(apiStr + _id,
+//                         {title: ""}); 
+//                 }
 
 // Delete Handle
 async function handleDelete(_id)
@@ -82,7 +82,7 @@ async function handleDelete(_id)
                             <h2>{video.title}</h2> 
                             <p>URL: <a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p>
                             <img src={video.thumbnail[0]} alt="video" />
-                            <Link to={`/UpdateForm`}><button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button></Link>
+                            <Link to={`/UpdateForm/${video._id}`}><button>Update</button></Link>
                             {/* <button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button> */}
                             <button onClick={()=>handleDelete(video._id)}>Delete</button>
                             {/* Add more video properties here as needed */}
