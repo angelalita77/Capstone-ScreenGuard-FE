@@ -66,7 +66,7 @@ async function handleDelete(_id)
     return (
     
     <section className="approved-videos">
-            <h1>Approved Videos List</h1>
+            <h1>Approved Videos List</h1><br/><br/>
 
             {/* Conditional Rendering: Check if data is still loading or empty */}
             {!videoData ? (

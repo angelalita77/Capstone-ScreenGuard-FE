@@ -42,7 +42,7 @@ function UpdateForm() {
             alert("Video title  updated successfully!");
 
             //Navigate back to Dashboard
-            navigate('/');
+            navigate('/Dashboard');
         } catch (err) {
             console.error(err.message);
             alert("Failed to update video title");

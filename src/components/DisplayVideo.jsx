@@ -29,6 +29,7 @@ export default function DisplayVideo({ snippet, id }) {
     <div className='videoCard'>
       <h2>{videoInfo.title}</h2>
       <img src={videoInfo.thumbnail} />
+      <br />
       <button onClick={handleAdd}>Add</button>
     </div>
   )

@@ -28,8 +28,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/approved" element={<Approved />} />
           <Route path="/updateform/:_id" element={<UpdateForm />} /> //Pass the _id params as a Route parameter
-          
-
         </Routes>
       </main>
 
