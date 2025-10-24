@@ -8,7 +8,7 @@ ScreenGuard is a web application designed to help parents curate safe YouTube co
 
 
 
-# #Technology Stack
+## Technology Stack
 - Framework: React 18 with Vite
 - Routing: React Router v6
 - HTTP Client: Axios
@@ -16,11 +16,11 @@ ScreenGuard is a web application designed to help parents curate safe YouTube co
 - External API: YouTube Data API v3
 
 ## HTTP Methods Used:
-GET: Fetch all videos (Dashboard, Approved)
-GET: Fetch single video (UpdateForm)
-POST: Add new video into Approved Page (DisplayVideo)
-PUT: Update video title (UpdateForm)
-DELETE: Remove video (Dashboard)
+`GET: Fetch all videos` (Dashboard, Approved) <br>
+`GET: Fetch single video` (UpdateForm) <br>
+`POST: Add new video into Approved Page` (DisplayVideo)  <br>
+`PUT: Update video title` (UpdateForm) <br>
+`DELETE: Remove video` (Dashboard) <br>
 
 ## Capstone Completion
 Version 1.0, 08/14/23
