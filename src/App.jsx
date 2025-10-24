@@ -8,6 +8,8 @@ import Home from './pages/HomePage/Home'
 import About from './pages/AboutPage/About'
 import Dashboard from './pages/DashboardPage/Dashboard'
 import Approved from './pages/ApprovedPage/Approved'
+import UpdateForm from './pages/UpdateFormPage/UpdateForm'
+
 
 
 
@@ -25,6 +27,8 @@ function App() {
           {/* <Route element={<ProtectedRoutes />}> */}
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/approved" element={<Approved />} />
+          <Route path="/updateform" element={<UpdateForm />} />
+          
 
         </Routes>
       </main>
@@ -32,5 +36,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

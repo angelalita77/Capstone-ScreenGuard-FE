@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 
 const apiStr = "http://localhost:3000/api/videos/"
@@ -81,7 +82,8 @@ async function handleDelete(_id)
                             <h2>{video.title}</h2> 
                             <p>URL: <a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p>
                             <img src={video.thumbnail[0]} alt="video" />
-                            <button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button>
+                            <Link to={`/UpdateForm`}><button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button></Link>
+                            {/* <button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button> */}
                             <button onClick={()=>handleDelete(video._id)}>Delete</button>
                             {/* Add more video properties here as needed */}
                         </div>
