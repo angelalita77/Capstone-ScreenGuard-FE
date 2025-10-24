@@ -29,3 +29,27 @@ header {
   display: flex;
   align-items: center;
 }
+
+/* --- New Styles for Navigation Links --- */
+
+.nav-links {
+    display: flex; /* Use flexbox to arrange the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    align-items: center;
+}
+
+.nav-links a {
+    /* Styles for the individual links */
+    color: #ffffff; /* Set text color to white */
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none; /* Remove the underline */
+    padding: 8px 12px; /* Add padding to increase click area and visual space */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15); /* Subtle background change on hover */
+}

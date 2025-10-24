@@ -20,10 +20,11 @@ function UpdateForm() {
 
                 // Using the state setter function to update state.
                 setVideoData(data);
+                console.log(data);
                 //Set the initial title in the input field
                 setNewTitle(data.title);
-
-                console.log(res.data);
+                console.log(data.title);
+                
             } catch (err) {
                 console.error(err.message);
             }
@@ -37,7 +38,7 @@ function UpdateForm() {
     async function handleUpdate(e) {
         e.preventDefault();
         try {
-            await axios.put(apiStr + _id);
+            await axios.put(apiStr + _id, { title: newTitle} );
             alert("Video title  updated successfully!");
 
             //Navigate back to Dashboard

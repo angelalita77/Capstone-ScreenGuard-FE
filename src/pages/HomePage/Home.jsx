@@ -20,7 +20,7 @@ export default function Home() {
         const url = new URL("https://youtube.googleapis.com/youtube/v3/search");
         url.search = new URLSearchParams({
             part: "snippet",
-            maxResults: 2,
+            maxResults: 4,
             q: query,
             type: "video",
             videoDefinition: "any",
@@ -74,10 +74,12 @@ export default function Home() {
     return (
         <div>
             {/* <!-- Search Bar with Button --> */}
-            <form id="search-container" onSubmit={fetchVideos}>
+            <div className='search-container'>
+            <form className='search-bar' onSubmit={fetchVideos}>
                 <input onChange={handleChange} type="text" id="search-input" placeholder="Search for videos ..." />
-                <input type="submit" id="search-btn" value="Search" />
+                <button type="submit" id="search-btn" value="Search"><img src='white-search-icon.png' width="40px"/></button>
             </form>
+            </div>
 
             {/* <!-- Search result info will be displayed under search bar --> */}
             <div id="video-results">

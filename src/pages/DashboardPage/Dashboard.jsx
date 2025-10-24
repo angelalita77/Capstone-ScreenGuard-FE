@@ -75,13 +75,13 @@ async function handleDelete(_id)
                 <p>No approved videos found.</p>
             ) : (
                 // If data exists, map over the array to display content
-                <div className="video-list">
+                <div className="video-grid">
                     {videoData.map((video, index) => (
                         <div key={index} className="video-card">
                             {/* Assuming your video object has 'title' and 'url' properties */}
                             <h2>{video.title}</h2> 
-                            <p>URL: <a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p>
-                            <img src={video.thumbnail[0]} alt="video" />
+                            <p><a href={video.url} target="_blank" rel="noopener noreferrer">{video.url}</a></p><br />
+                            <img src={video.thumbnail[0]} alt="video" /><br />
                             <Link to={`/UpdateForm/${video._id}`}><button>Update</button></Link>
                             {/* <button onClick={(e)=>handleUpdate(video._id, e.target.value)}>Update</button> */}
                             <button onClick={()=>handleDelete(video._id)}>Delete</button>
