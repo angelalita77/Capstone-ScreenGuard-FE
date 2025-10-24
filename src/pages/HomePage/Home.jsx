@@ -73,6 +73,8 @@ export default function Home() {
 
     return (
         <div>
+            <br/>
+            <h2> Search For New YouTube Videos </h2>
             {/* <!-- Search Bar with Button --> */}
             <div className='search-container'>
             <form className='search-bar' onSubmit={fetchVideos}>
