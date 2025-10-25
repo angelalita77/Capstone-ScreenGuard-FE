@@ -6,8 +6,6 @@ The ScreenGuard frontend is a React-based single-page application (SPA) that ena
 ## Link to my Back-End Repo
 ### [ScreenGuard Back-End](https://github.com/angelalita77/Capstone-ScreenGuard-BE)<br/><br/>
 
-## Screenshot
-
 
 ## Technology Stack
 - Framework: React 18 with Vite
