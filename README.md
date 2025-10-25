@@ -1,11 +1,12 @@
 # ScreenGuard - FRONT END
 
 ## Project Overview
-ScreenGuard is a web application designed to help parents curate safe YouTube content for their children. Due to time constraints, the current implementation focuses on core video management functionality without full authentication.
+The ScreenGuard frontend is a React-based single-page application (SPA) that enables parents to search YouTube videos, curate approved content, and manage a safe video library for children. Due to time constraints, the current implementation focuses on core video management functionality without full authentication.
 
 ## Link to my Back-End Repo
 ### [ScreenGuard Back-End](https://github.com/angelalita77/Capstone-ScreenGuard-BE)<br/><br/>
 
+## Screenshot
 
 
 ## Technology Stack

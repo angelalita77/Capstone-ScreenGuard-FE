@@ -41,7 +41,7 @@ function UpdateForm() {
             await axios.put(apiStr + _id, { title: newTitle} );
             alert("Video title  updated successfully!");
 
-            //Navigate back to Dashboard
+            //Navigate back to Dashboard after click OK in alert message
             navigate('/Dashboard');
         } catch (err) {
             console.error(err.message);
