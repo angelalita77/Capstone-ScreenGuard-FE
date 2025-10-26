@@ -64,27 +64,7 @@ Open your browser and navigate to the local development URL (typically http://lo
 `DELETE: Remove video` (Dashboard) <br>
 
 ## 📁 Project Structure
-screenguard_fe/
-├── src/
-│   ├── components/
-│   │   ├── navBar/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Navbar.css
-│   │   └── DisplayVideo.jsx
-│   ├── pages/
-│   │   ├── HomePage/
-│   │   │   └── Home.jsx
-│   │   ├── AboutPage/
-│   │   │   └── About.jsx
-│   │   ├── DashboardPage/
-│   │   │   └── Dashboard.jsx
-│   │   ├── ApprovedPage/
-│   │   │   └── Approved.jsx
-│   │   └── UpdateFormPage/
-│   │       └── UpdateForm.jsx
-│   ├── App.jsx
-│   └── App.css
-└── package.json
+![](public/project%20structure.jpg)
 
 ## Capstone Completion
 Version 1.0, 08/14/23
