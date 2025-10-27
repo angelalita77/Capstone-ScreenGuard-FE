@@ -46,7 +46,6 @@ If you click on the thumbnail of the video, it will take you to the Youtube page
 ## 🛠️ Tech Stack
 
 **Frontend:**
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -56,13 +55,11 @@ If you click on the thumbnail of the video, it will take you to the Youtube page
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 **Backend:**
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 **APIs:**
-
 ![YouTube](https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 
 
@@ -99,24 +96,26 @@ Open your browser and navigate to the local development URL (typically http://lo
 `PUT: Update video title` (UpdateForm) <br>
 `DELETE: Remove video` (Dashboard) <br>
 
-## `API Endpoints
-The frontend connects to the following backend endpoints:
-
-`GET /api/videos/` - Fetch all approved videos
-`POST /api/videos/` - Add a new video to the approved list
-`PUT /api/videos/:id` - Update video information
-`DELETE /api/videos/:id` - Remove a video from the approved list
+## API Endpoints
+The frontend connects to the following backend endpoints:<br>
+`GET /api/videos/` - Fetch all approved videos<br>
+`POST /api/videos/` - Add a new video to the approved list<br>
+`PUT /api/videos/:id` - Update video information<br>
+`DELETE /api/videos/:id` - Remove a video from the approved list<br>
 
 ## 📁 Project Structure
-<img src="public/screenshots/project structure.jpg" style="width:300px; border-radius:10px;" alt="My Image">
+<img src="public/screenshots/project structure.jpg" style="width:300px; border-radius:10px;" alt="project-structure">
 
 
+## Project was Managed by Jira
+https://anjeanette.atlassian.net/jira/software/projects/SGW/summary <br>
+<img src="public/screenshots/jira-dashboard-screenguard.jpg" style="width:300px; border-radius:10px;" alt="jira-screenshot">
 
 ## Contributing
-## This is a Perscholas Capstone
+### This is a Perscholas Capstone
 Version 1.0, 08/14/23
 
-## Introduction
+### Introduction
 This document will remind you of the requirements of the course Capstone Project (CP), and give you final tasks to work towards for its completion.
 Capstone Objective
 Create a full-stack web application using MongoDB, Express, React, and Node (MERN).
